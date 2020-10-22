@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+
+    <script crossorigin="anonymous"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js" integrity="sha512-RjPwl9YNS2z4nf50767Vg8dW2WLVv8WmKMYhZVBgiCJaiGVNIjXcVcpzVLUzuojaUM5ACZefP6sXnaWkR0lj0w==" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-8">
+            <div class="messages-list d-none">
+                <h2>Messages</h2>
+                <ul class="list-group"></ul>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="users-list d-none">
+                <h2>Users</h2>
+                <ul class="list-group">
+
+                </ul>
+            </div>
+
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" id="nickname">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="message-form-container fixed-bottom">
+        <form class="message-form ml-2 mr-2 d-none">
+            <div class="form-row">
+                <div class="col-10">
+                    <input id="message" class="form-control message " placeholder="message" type="text"/>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-primary w-100" type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+    <script src="js/script.js"></script>
+
+</html>
