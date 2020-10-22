@@ -1,5 +1,6 @@
 const express = require('express');
 const { disconnect } = require('process');
+const PORT = process.env.PORT || 3000;
 
 
 const app = express();
@@ -47,6 +48,6 @@ io.on('connection',(socket)=>{
     })
 });
 
-server.listen(3000, () =>{
+server.listen(PORT, () =>{
     console.log('Server is work on 3000')
 })
